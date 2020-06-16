@@ -14,3 +14,8 @@ VALUES ('chidimo', 'first message'),
 `;
 
 export const dropMessagesTable = 'DROP TABLE messages';
+
+export const insertItems = `
+INSERT INTO items(name, price)
+VALUES ('item1', 20.403), ('item2', 5.32)
+`;

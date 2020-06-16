@@ -11,3 +11,9 @@ export const performAsyncAction = async (req, res, next) => {
     next(err);
   }
 };
+
+
+export const roundPrice = (req, res, next) => {
+   req.body.price = parseFloat(req.body.price).toFixed(2)
+   next();
+}
